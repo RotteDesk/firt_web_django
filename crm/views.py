@@ -1,14 +1,13 @@
 from django.shortcuts import render
 from .models import Order
 from .froms import OrderForm
+from cms.models import CmsSlider
 
 
 # Create your views here.
 def f_page(request):
-    all_object = Order.objects.all()
-    form = OrderForm()
-    return render(request, './index.html', {"all_object": all_object,
-                                            "form": form})
+    slider_list = CmsSlider.objects.all()
+    return render(request, './index.html', {"slider_list": slider_list})
 
 
 def ty_page(request):
