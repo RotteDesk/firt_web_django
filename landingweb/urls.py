@@ -25,10 +25,11 @@ urlpatterns = [
     path('Спасибо/', views.ty_page, name='thanks')
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
-'''if settings.DEBUG == True:
+
+if settings.DEBUG == True:
 
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 else:
 
-    urlpatterns'''
+    urlpatterns
