@@ -46,11 +46,11 @@
             {% for all_obj in price_table %}
             <tbody>
             <tr>
-                <td>{{pt_title}}1</td>
+                <td>{{all_obj.pt_title}}1</td>
                 <td>
-                    <del>{{pt_old_price}}</del>
+                    <del>{{all_obj.pt_old_price}}</del>
                 </td>
-                <td>{{pt_new_price}}</td>
+                <td>{{all_obj.pt_new_price}}</td>
             </tr>
             {% endfor %}
             </tbody>
